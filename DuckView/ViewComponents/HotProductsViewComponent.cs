@@ -12,6 +12,7 @@ namespace DuckView.ViewComponents
                 new Product{Id=4, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
                 new Product{Id=5, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
                 new Product{Id=6, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
+                new Product{Id=7, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
             };
             return View(products);
         }

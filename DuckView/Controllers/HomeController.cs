@@ -1,6 +1,5 @@
-using System.Diagnostics;
-using DuckView.Models;
 using Microsoft.AspNetCore.Mvc;
+using DuckView.Models;
 
 namespace DuckView.Controllers
 {
@@ -8,7 +7,13 @@ namespace DuckView.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var products = new List<Product>
+            {
+                new Product{Id=1, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
+                new Product{Id=2, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
+                new Product{Id=2, Name="Nồi cơm điện cao tần Nagakawa NAG0102", Image="/images/noicom.jpg"},
+            };
+            return View(products);
         }
     }
 }

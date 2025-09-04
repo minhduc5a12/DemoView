@@ -15,5 +15,22 @@ namespace DuckView.Controllers
             };
             return View(products);
         }
+
+        public PartialViewResult ProductCategories()
+        {
+            var catalog = new List<string> {
+                "Áo dài",
+                "Áo đông",
+                "Túi xách",
+                "Đồng hồ",
+                "Ví da",
+                "Thắt lưng da",
+                "Tủ lạnh",
+                "Tivi",
+                "Quạt điện",
+                "Lò sưởi"
+            };
+            return PartialView(catalog);
+        }
     }
 }
